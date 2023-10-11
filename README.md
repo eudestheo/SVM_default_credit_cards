@@ -1,7 +1,9 @@
 SVM-default-credit-cards
 ==============================
 
-SVM implementation in order to predict if someone will default on their credit card payments
+SVM implementation in order to predict if someone will default on their credit card payments.
+
+All explorations (Loading, preprocessing and training process) are in the notebooks section.
 
 Project Organization
 ------------
