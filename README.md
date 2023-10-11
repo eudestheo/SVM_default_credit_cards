@@ -1,7 +1,7 @@
 SVM-default-credit-cards
 ==============================
 
-SVM in order to predict if someone will default on their credit card payments
+SVM implementation in order to predict if someone will default on their credit card payments
 
 Project Organization
 ------------
@@ -19,9 +19,7 @@ Project Organization
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
@@ -36,14 +34,21 @@ Project Organization
     │   ├── __init__.py    <- Makes src a Python module
     │   │
     │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
+    │   │   └── load_data.py
+    │   │ 
+    │   ├── utils          <- Scripts for easy information access
+    │   │   └── get_column_description.py
+    │   │   └── parse_column_documentation.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
+    │   │   ├── delete_columns.py
+    │   │   ├── filter_dataframe.py
+    │   │   ├─- downsample_dataframe.py
+    │   │   ├─- preprocess_data.py
+    │   │   └── split_and_scale_data.py
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
-    │   │   ├── predict_model.py
     │   │   └── train_model.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
